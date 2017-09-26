@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head><h1>Calculator</h1>
+	<link rel="stylesheet" type="text/css" href="calc.css">
+	<link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+	<div class="novalue1">
+        <form action="">
+         First Value:
+          <input type="number" id="one"></form>
+  </div>
+  <div class="novalue2">
+		        <form action="">
+		  Second Value:
+		   <input type="number" id="two" >
+        </form>
+	</div>
+ <div id="symbol">
+        <button onclick="myFunction()">+</button>
+        <button onclick="myFunction1()">-</button>
+        <button onclick="myFunction2()">*</button>
+        <button onclick="myFunction3()">%</button>
+        
+        <p id="demo"></p>
+  </div>
+  Result:
+  <div id="res">
+     <p>value</p>
+ </div>
+
+<script>
+	function myFunction() {
+
+   var a = parseInt(document.getElementById("one").value);
+   var b = parseInt(document.getElementById("two").value);
+   var result=a+b;
+   document.getElementById("res").innerHTML=result;
+
+}
+function myFunction1() {
+
+   var a = parseInt(document.getElementById("one").value);
+   var b = parseInt(document.getElementById("two").value);
+   var result=a-b;
+   document.getElementById("res").innerHTML=result;
+
+}
+function myFunction2() {
+
+   var a = parseInt(document.getElementById("one").value);
+   var b = parseInt(document.getElementById("two").value);
+   var result=a*b;
+   document.getElementById("res").innerHTML=result;
+
+}
+function myFunction3() {
+
+   var a = parseInt(document.getElementById("one").value);
+   var b = parseInt(document.getElementById("two").value);
+   var result=a%b;
+   document.getElementById("res").innerHTML=result;
+
+}
+</script>
+ </body>
+</html>
