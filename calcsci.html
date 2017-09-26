@@ -1,0 +1,78 @@
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<style>
+.col
+{
+	padding-bottom: 15px;
+	text-align: center;
+}
+form
+{
+	padding-top: 10px;
+}
+#btn
+{
+	width: 65px;
+	height: auto;
+}
+</style>
+<body>
+	<div class="container">
+    	<div class="row">
+    		<div class="col">
+    		  <form Name="calc">
+
+    			<input id="btn1" name="display" onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text">
+			
+    		</div>
+    		<div class="col">
+				<input id="btn" type=button value="0" OnClick="calc.display.value+='0'">
+				<input id="btn" type=button value="1" OnClick="calc.display.value+='1'">
+				<input id="btn" type=button value="2" OnClick="calc.display.value+='2'">
+				<input id="btn" type=button value="+" OnClick="calc.display.value+='+'">
+    		</div>
+    		<div class="col">
+				<input id="btn" type=button value="3" OnClick="calc.display.value+='3'">
+				<input id="btn" type=button value="4" OnClick="calc.display.value+='4'">
+				<input id="btn" type=button value="5" OnClick="calc.display.value+='5'">
+				<input id="btn" type=button value="-" OnClick="calc.display.value+='-'">
+    		</div>
+    		<div class="col">
+				<input id="btn" type=button value="6" OnClick="calc.display.value+='6'">
+				<input id="btn" type=button value="7" OnClick="calc.display.value+='7'">
+				<input id="btn" type=button value="8" OnClick="calc.display.value+='8'">
+				<input id="btn" type=button value="x" OnClick="calc.display.value+='*'">
+    		</div>
+    		<div class="col">
+				<input id="btn" type=button value="9" OnClick="calc.display.value+='9'">
+				<input id="btn" type=button value="=" OnClick="calc.display.value=eval(calc.display.value)">
+				<input id="btn" type=button value="/" OnClick="calc.display.value+='/'">
+				<input id="btn" type=button value="." OnClick="calc.display.value+='.'">
+    		</div>
+    		<div class="col">
+				<input id="btn" type=button value="x2" OnClick="calc.display.value=Math.pow(calc.display.value,2)">		
+				<input id="btn" type=button value="C" OnClick="calc.display.value=''">
+				<input id="btn" type=button value="sqrt" OnClick="sqrt_function()">
+				<input id="btn" type=button value="EXP" Onclick="exp_function">
+    		</div>
+    		<div class="col" id="scientific">
+    			<input id="btn" type=button value="cos" OnClick="calc.display.value = Math.cos(calc.display.value)">
+				<input id="btn" type=button value="sin" OnClick="calc.display.value = Math.sin(calc.display.value)">	
+				<input id="btn" type=button value="tan" OnClick="calc.display.value = Math.tan(calc.display.value)">
+				<input id="btn" type=button value="fact" OnClick="calc.display.value = Math.tan(calc.display.value)">
+    		</div>
+    		<div class="col" id="scientific">
+				<input id="btn" type=button value="LN2" Onclick="calc.display.value = Math.LN2(calc.display.value+=0.693)">
+				<input id="btn" type=button value="LN10" Onclick="calc.display.value = Math.tan(calc.display.value+=2.302)">	
+				<input id="btn" type=button value="log2E" Onclick="calc.display.value = Math.Log2E(calc.display.value+=1.442)">	
+				<input id="btn" type=button value="log10E" Onclick="calc.display.value = Math.LN2(calc.display.value+=0.434)">					
+    		</div>
+    		
+			
+    	</div>
+    </form>
+    </div>
+</body>
+</html>

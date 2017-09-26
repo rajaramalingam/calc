@@ -1,0 +1,14 @@
+<input class=”button” type=”button” value=”E” onClick=”calc.display.value+=2.718”>
+<input class=”button” type=”button” value=”pi” onClick=”calc.display.value+=3.141”>
+<input class=”button” type=”button” value=”x^y” onClick=”power_function()”>
+<input class=”button” type=”button” value=”(” onClick=”openpara(this.value)”>
+<input class=”button” type=”button” value=”)” onClick=”closepara(this.value)”>
+<input class=”button” type=”button” value=”log” onClick=”log_function()”>
+<input class=”button” type=”button” value=”EXP” onClick=”exp_function”>
+
+<div class="col" id="scientific">
+				<input id="btn" type=button value="(" Onclick="calc.display.value=calc.display.value+='(' ">
+				<input id="btn" type=button value=")" Onclick="calc.display.value=calc.display.value+=')' ">	
+				<input id="btn" type=button value="x^y" Onclick="calc.display.value=Math.pow(calc.display.value,calc.display.value)">
+				<input id="btn" type=button value="log" Onclick="calc.display.value=Math.log(calc.display.value)">
+			</div>
